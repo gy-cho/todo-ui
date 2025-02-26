@@ -19,9 +19,9 @@ export default {
     };
   },
   methods: {
-    async login(userId) {
+    async login(loginId) {
       localStorage.removeItem('token');
-      const result = await login(userId);
+      const result = await login(loginId);
 
       localStorage.setItem('token', result.token);
     },
