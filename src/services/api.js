@@ -9,9 +9,9 @@ async function fetchData(path, method = 'GET', body = null) {
   };
 
   // JWT 토큰이 있으면 Authorization 헤더에 추가
-  const jwtToken = getJwtToken();
-  if (jwtToken) {
-    options.headers['Authorization'] = `Bearer ${jwtToken}`;
+  const token = getLoginToken();
+  if (token) {
+    options.headers['Authorization'] = `Bearer ${token}`;
   }
 
   if (body) {
@@ -54,6 +54,6 @@ export async function deleteData(endpoint, data) {
 }
 
 // JWT 토큰을 가져오는 함수
-function getJwtToken() {
+function getLoginToken() {
   return localStorage.getItem('token');
 }

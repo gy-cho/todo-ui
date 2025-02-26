@@ -23,7 +23,7 @@ export default {
       localStorage.removeItem('token');
       const result = await login(userId);
 
-      localStorage.setItem('token', result.jwtToken);
+      localStorage.setItem('token', result.token);
     },
   },
 };
