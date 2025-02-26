@@ -1,0 +1,73 @@
+/* src/assets/styles/global.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+button {
+  padding: 5px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #4CAF50;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.1);
+}
+
+button:hover {
+  background-color: #45a049;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.15), -4px -4px 12px rgba(255, 255, 255, 0.15);
+}
+
+button:active {
+  transform: translateY(2px);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), -2px -2px 6px rgba(255, 255, 255, 0.2);
+}
+
+.btn-cancel {
+  background-color: #999;
+}
+
+.btn-cancel:hover {
+  background-color: #888;
+}
+
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.card-s {
+  width: 500px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-m {
+  width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-max {
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.m-auto{
+  text-align: right;
+}
